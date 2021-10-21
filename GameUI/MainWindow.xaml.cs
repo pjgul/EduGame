@@ -24,9 +24,6 @@ namespace GameUI
         {
             InitializeComponent();
 
-            GameScreen gameScreen = new GameScreen();
-            gameScreen.Show();
-            Close();
         }
     }
 }
