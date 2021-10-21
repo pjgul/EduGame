@@ -23,7 +23,6 @@ namespace GameUI
         public MainWindow()
         {
             InitializeComponent();
-
         }
     }
 }

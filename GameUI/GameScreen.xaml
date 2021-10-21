@@ -9,6 +9,10 @@
         Icon="Images/Icons/MathQuest.ico"
         Height="720" Width="1280" ResizeMode="NoResize">
     <Grid Background="Gray">
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" x:Name="First"></RowDefinition>
+            <RowDefinition Height="1*" x:Name="Second"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="Aqua"></Grid>
     </Grid>
 </Window>
