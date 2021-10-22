@@ -8,11 +8,18 @@
         Title="MathQuest"
         Icon="Images/Icons/MathQuest.ico"
         Height="720" Width="1280" ResizeMode="NoResize">
-    <Grid Background="Gray">
+    <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*" x:Name="First"></RowDefinition>
             <RowDefinition Height="1*" x:Name="Second"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Background="Aqua"></Grid>
+        <Grid x:Name="GameGrid" Grid.Row="0" Background="Beige">
+            
+        </Grid>
+        <Grid x:Name="OptionsGrid" Grid.Row="1">
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/OptionsGridImages/OptionsMenuPlaceholder.png"/>
+            </Grid.Background>
+        </Grid>
     </Grid>
 </Window>

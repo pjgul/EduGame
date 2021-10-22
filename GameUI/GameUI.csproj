@@ -104,5 +104,8 @@
   <ItemGroup>
     <Resource Include="Images\Icons\MathQuest.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\OptionsGridImages\OptionsMenuPlaceholder.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
