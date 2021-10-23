@@ -107,5 +107,8 @@
   <ItemGroup>
     <Resource Include="Images\OptionsGridImages\OptionsMenuPlaceholder.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Hearts\Heart.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

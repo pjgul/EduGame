@@ -10,11 +10,21 @@
         Height="720" Width="1280" ResizeMode="NoResize">
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*" x:Name="First"></RowDefinition>
-            <RowDefinition Height="1*" x:Name="Second"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Grid x:Name="GameGrid" Grid.Row="0" Background="Beige">
+            <!--#region PlayerHearts-->
+            <Image x:Name="HeartPlayer1" HorizontalAlignment="Left" Height="25" Margin="10,10,0,0" VerticalAlignment="Top" Width="25" Source="Images/Hearts/Heart.png"/>
+            <Image x:Name="HeartPlayer2" HorizontalAlignment="Left" Height="25" Margin="35,10,0,0" VerticalAlignment="Top" Width="25" Source="Images/Hearts/Heart.png"/>
+            <Image x:Name="HeartPlayer3" HorizontalAlignment="Left" Height="25" Margin="60,10,0,0" VerticalAlignment="Top" Width="25" Source="Images/Hearts/Heart.png"/>
+            <!--#endregion-->
             
+            <!--#region EnemyHearts-->
+            <Image x:Name="HeartEnemyNOT1" HorizontalAlignment="Right" Height="25" Margin="0,10,9.6,0" VerticalAlignment="Top" Width="25" Source="Images/Hearts/Heart.png"/>
+            <Image x:Name="HeartEnemyNOT2" HorizontalAlignment="Right" Height="25" Margin="0,10,34.6,0" VerticalAlignment="Top" Width="25" Source="Images/Hearts/Heart.png"/>
+            <Image x:Name="HeartEnemyNOT3" HorizontalAlignment="Right" Height="25" Margin="0,10,59.6,0" VerticalAlignment="Top" Width="25" Source="Images/Hearts/Heart.png"/>
+            <!--#endregion-->
         </Grid>
         <Grid x:Name="OptionsGrid" Grid.Row="1">
             <Grid.Background>
