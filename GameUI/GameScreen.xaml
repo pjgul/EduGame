@@ -30,6 +30,13 @@
             <Grid.Background>
                 <ImageBrush ImageSource="Images/OptionsGridImages/OptionsMenuPlaceholder.png"/>
             </Grid.Background>
+            <Border Height="250" Width="250">
+                <Border.Background>
+                    <ImageBrush ImageSource="Images/OptionsGridImages/OptionsMenuPlaceholder.png"/>
+                </Border.Background>
+                <TextBlock Text="2 + 2 = ?" Width="250" Height="80" FontSize="48" Foreground="White" TextAlignment="Center">
+                </TextBlock>
+            </Border>
         </Grid>
     </Grid>
 </Window>
