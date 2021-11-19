@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ApplicationR;
+using Autofac;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +24,13 @@ namespace GameUI
         public GameScreen()
         {
             InitializeComponent();
+
+            var container = ContainerConfig.Configure();
+
+            using (var scope = container.BeginLifetimeScope())
+            {
+                var equationsInt = scope.Resolve<IEquationsInt>();
+            }
         }
     }
 }

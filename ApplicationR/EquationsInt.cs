@@ -10,7 +10,7 @@ namespace ApplicationR
     /// <summary>
     /// EquationsInt describes logic of equations within Integer range of numbers.
     /// </summary>
-    public class EquationsInt
+    public class EquationsInt : IEquationsInt
     {
         IArguments<int> _arguments;
 

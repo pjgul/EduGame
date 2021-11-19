@@ -68,6 +68,7 @@
   <ItemGroup>
     <Compile Include="ContainerConfig.cs" />
     <Compile Include="EquationsInt.cs" />
+    <Compile Include="IEquationsInt.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
