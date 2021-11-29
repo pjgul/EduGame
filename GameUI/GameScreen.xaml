@@ -13,7 +13,12 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid x:Name="GameGrid" Grid.Row="0" Background="Beige">
+        <Grid x:Name="GameGrid" Grid.Row="0">
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/GameGridImages/WindowsFields.png"/>
+            </Grid.Background>
+            <!--DO NOT ADJUST SIZE!! The size should stay at: H:340, W:1266-->
+            <Image Source="Images/GameGridImages/GameGridOverlay.png" HorizontalAlignment="Left" Height="340" VerticalAlignment="Top" Width="1266" Margin="0,0,0,-0.4"/>
             <!--#region Hearts-->
 
             <!--#region PlayerHearts-->
@@ -30,17 +35,17 @@
 
             <!--#endregion-->
             <TextBox BorderBrush="Black" Width="80" Height="80" BorderThickness="4" Text="4" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
-            <Image Visibility="Hidden" HorizontalAlignment="Left" Height="346" VerticalAlignment="Top" Width="650" Source="Images/OptionsGridImages/OptionsMenuPlaceholder.png" Margin="0,0,0,-0.4"/>
+
         </Grid>
         <Grid x:Name="OptionsGrid" Grid.Row="1">
             <Grid.Background>
                 <ImageBrush ImageSource="Images/OptionsGridImages/OptionsMenuPlaceholder.png"/>
             </Grid.Background>
             <Border Height="250" Width="250">
-                <Border.Background>
+                <!--<Border.Background>
                     <ImageBrush ImageSource="Images/OptionsGridImages/OptionsMenuPlaceholder.png"/>
-                </Border.Background>
-                <TextBlock Text="2 + 2 = ?" Width="250" Height="80" FontSize="48" Foreground="White" TextAlignment="Center">
+                </Border.Background>-->
+                <TextBlock x:Name="TxbEquation" Text="2 + 2 = ?" Width="250" Height="80" FontSize="48" Foreground="White" TextAlignment="Center">
                 </TextBlock>
             </Border>
         </Grid>

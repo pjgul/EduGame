@@ -30,6 +30,8 @@ namespace GameUI
             using (var scope = container.BeginLifetimeScope())
             {
                 var equationsInt = scope.Resolve<IEquationsInt>();
+                equationsInt.PopulateArguments_Range100();
+                TxbEquation.Text = equationsInt.ReturnArgumentA().ToString();
             }
         }
     }

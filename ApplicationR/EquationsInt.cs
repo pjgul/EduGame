@@ -30,5 +30,30 @@ namespace ApplicationR
             _arguments.ArgumentD = new Random().Next(1, 101);
             _arguments.ArgumentE = new Random().Next(1, 101);
         }
+
+        public int ReturnArgumentA()
+        {
+            return _arguments.ArgumentA;
+        }
+        
+        public int ReturnArgumentB()
+        {
+            return _arguments.ArgumentB;
+        }
+
+        public int ReturnArgumentC()
+        {
+            return _arguments.ArgumentC;
+        }
+
+        public int ReturnArgumentD()
+        {
+            return _arguments.ArgumentD;
+        }
+
+        public int ReturnArgumentE()
+        {
+            return _arguments.ArgumentE;
+        }
     }
 }

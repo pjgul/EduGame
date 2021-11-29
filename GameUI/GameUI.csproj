@@ -142,5 +142,11 @@
       <Name>ApplicationR</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\GameGridImages\WindowsFields.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\GameGridImages\GameGridOverlay.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
