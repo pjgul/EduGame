@@ -31,29 +31,26 @@ namespace ApplicationR
             _arguments.ArgumentE = new Random().Next(1, 101);
         }
 
-        public int ReturnArgumentA()
+        public int ArgumentA { get { return _arguments.ArgumentA; } set { _arguments.ArgumentA = value; } }
+
+        public int ArgumentB { get { return _arguments.ArgumentB; } set { _arguments.ArgumentB = value; } }
+
+        public int ArgumentC { get { return _arguments.ArgumentC; } set { _arguments.ArgumentC = value; } }
+
+        public int ArgumentD { get { return _arguments.ArgumentD; } set { _arguments.ArgumentD = value; } }
+
+        public int ArgumentE { get { return _arguments.ArgumentE; } set { _arguments.ArgumentE = value; } }
+
+        public int ArgumentsAnswer { get; set; }
+
+        public int CalculateAnswer()
         {
-            return _arguments.ArgumentA;
-        }
-        
-        public int ReturnArgumentB()
-        {
-            return _arguments.ArgumentB;
+            return ArgumentA + ArgumentB;
         }
 
-        public int ReturnArgumentC()
+        public bool EquateAnswers()
         {
-            return _arguments.ArgumentC;
-        }
-
-        public int ReturnArgumentD()
-        {
-            return _arguments.ArgumentD;
-        }
-
-        public int ReturnArgumentE()
-        {
-            return _arguments.ArgumentE;
+            return (ArgumentsAnswer == CalculateAnswer()) ? true : false;
         }
     }
 }

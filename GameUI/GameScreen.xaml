@@ -17,8 +17,6 @@
             <Grid.Background>
                 <ImageBrush ImageSource="Images/GameGridImages/WindowsFields.png"/>
             </Grid.Background>
-            <!--DO NOT ADJUST SIZE!! The size should stay at: H:340, W:1266-->
-            <Image Source="Images/GameGridImages/GameGridOverlay.png" HorizontalAlignment="Left" Height="340" VerticalAlignment="Top" Width="1266" Margin="0,0,0,-0.4"/>
             <!--#region Hearts-->
 
             <!--#region PlayerHearts-->
@@ -34,20 +32,27 @@
             <!--#endregion-->
 
             <!--#endregion-->
-            <TextBox BorderBrush="Black" Width="80" Height="80" BorderThickness="4" Text="4" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
-
+            <Border Height="250" Width="250" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <!--<Border.Background>
+                    <ImageBrush ImageSource="Images/OptionsGridImages/OptionsMenuPlaceholder.png"/>
+                </Border.Background>-->
+                <TextBlock x:Name="TxbEquation" Text="2 + 2 = ?" Width="250" Height="80" FontSize="48" Foreground="White" TextAlignment="Center"/>
+            </Border>
         </Grid>
+        <!--#region GameScreen Overlay-->
+        <Grid Grid.Row="0">
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/GameGridImages/GameGridOverlay.png"/>
+            </Grid.Background>
+        </Grid>
+        <!--#endregion-->
         <Grid x:Name="OptionsGrid" Grid.Row="1">
             <Grid.Background>
                 <ImageBrush ImageSource="Images/OptionsGridImages/OptionsMenuPlaceholder.png"/>
             </Grid.Background>
-            <Border Height="250" Width="250">
-                <!--<Border.Background>
-                    <ImageBrush ImageSource="Images/OptionsGridImages/OptionsMenuPlaceholder.png"/>
-                </Border.Background>-->
-                <TextBlock x:Name="TxbEquation" Text="2 + 2 = ?" Width="250" Height="80" FontSize="48" Foreground="White" TextAlignment="Center">
-                </TextBlock>
-            </Border>
+            <TextBox x:Name="TxbAnswerBox" BorderBrush="Black" Width="80" Height="80" BorderThickness="4" Text="4" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
+            <Button x:Name="BtnAttack" Content="Attack!" HorizontalAlignment="Left" Margin="597,217,0,0" VerticalAlignment="Top" Width="80" Click="BtnAttack_Click"/>
+
         </Grid>
     </Grid>
 </Window>

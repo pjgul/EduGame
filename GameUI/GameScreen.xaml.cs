@@ -21,18 +21,49 @@ namespace GameUI
     /// </summary>
     public partial class GameScreen : Window
     {
+        IEquationsInt _equations;
+
         public GameScreen()
         {
             InitializeComponent();
 
+            InitiateEquations();
+
+            InitiateProblem();
+        }
+        #region InitiateEquation
+        /// <summary>
+        /// Creates a container to initiate equations interface and populate it with random values.
+        /// </summary>
+        public void InitiateEquations()
+        {
             var container = ContainerConfig.Configure();
 
             using (var scope = container.BeginLifetimeScope())
             {
-                var equationsInt = scope.Resolve<IEquationsInt>();
-                equationsInt.PopulateArguments_Range100();
-                TxbEquation.Text = equationsInt.ReturnArgumentA().ToString();
+                _equations = scope.Resolve<IEquationsInt>();
+                _equations.PopulateArguments_Range100();
             }
+        }
+        #endregion
+
+        public void InitiateProblem()
+        {
+            TxbEquation.Text = String.Format("{0} + {1} = ?", _equations.ArgumentA.ToString(), _equations.ArgumentB.ToString());
+        }
+
+        private void BtnAttack_Click(object sender, RoutedEventArgs e)
+        {
+            int x;
+            if (Int32.TryParse(TxbAnswerBox.Text, out x))
+            {
+                _equations.ArgumentsAnswer = x;
+            }
+            else TxbAnswerBox.Text = "Failed";
+
+            if (_equations.EquateAnswers())
+            TxbAnswerBox.Text = _equations.EquateAnswers().ToString();
+            else TxbAnswerBox.Text = "Failed";
         }
     }
 }

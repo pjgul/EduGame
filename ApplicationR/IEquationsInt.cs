@@ -1,18 +1,20 @@
 ﻿namespace ApplicationR
 {
-    public interface IEquationsInt
+    public interface IEquationsInt : IEquate, ICalculateAnswer
     {
         void PopulateArguments_Range100();
 
-        int ReturnArgumentA();
+        int ArgumentA { get; set; }
 
-        int ReturnArgumentB();
+        int ArgumentB { get; set; }
 
-        int ReturnArgumentC();
+        int ArgumentC { get; set; }
 
-        int ReturnArgumentD();
+        int ArgumentD { get; set; }
 
-        int ReturnArgumentE();
+        int ArgumentE { get; set; }
+
+        int ArgumentsAnswer { get; set; }
     }
 
 }
