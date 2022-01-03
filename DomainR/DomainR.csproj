@@ -66,9 +66,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\ArgumentDic.cs" />
     <Compile Include="Models\Arguments.cs" />
     <Compile Include="Models\Health.cs" />
     <Compile Include="Models\IArguments.cs" />
+    <Compile Include="Models\IArgumentsDic.cs" />
     <Compile Include="Models\IHealth.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

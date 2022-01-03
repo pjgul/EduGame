@@ -31,6 +31,7 @@ namespace GameUI
 
             InitiateProblem();
         }
+
         #region InitiateEquation
         /// <summary>
         /// Creates a container to initiate equations interface and populate it with random values.
@@ -47,11 +48,17 @@ namespace GameUI
         }
         #endregion
 
+        /// <summary>
+        /// Initiates the problem that needs to be solved.
+        /// </summary>
         public void InitiateProblem()
         {
             TxbEquation.Text = String.Format("{0} + {1} = ?", _equations.ArgumentA.ToString(), _equations.ArgumentB.ToString());
         }
 
+        /// <summary>
+        /// Tests whether the given answer in the <c>TxbAnswerBox.Text</c> is an int and then tests whether or not it is equall to the answer of the generated question.
+        /// </summary>
         private void BtnAttack_Click(object sender, RoutedEventArgs e)
         {
             int x;
