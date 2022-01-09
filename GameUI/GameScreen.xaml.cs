@@ -53,7 +53,7 @@ namespace GameUI
         /// </summary>
         public void InitiateProblem()
         {
-            TxbEquation.Text = String.Format("{0} + {1} = ?", _equations.ArgumentA.ToString(), _equations.ArgumentB.ToString());
+            TxbEquation.Text = String.Format("{0} + {1}", _equations.ArgumentA.ToString(), _equations.ArgumentB.ToString());
         }
 
         /// <summary>

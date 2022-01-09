@@ -25,9 +25,13 @@ namespace ApplicationR
         public void PopulateArguments_Range100()
         {
             _arguments.ArgumentA = new Random().Next(1, 101);
+            System.Threading.Thread.Sleep(100);
             _arguments.ArgumentB = new Random().Next(1, 101);
+            System.Threading.Thread.Sleep(100);
             _arguments.ArgumentC = new Random().Next(1, 101);
+            System.Threading.Thread.Sleep(100);
             _arguments.ArgumentD = new Random().Next(1, 101);
+            System.Threading.Thread.Sleep(100);
             _arguments.ArgumentE = new Random().Next(1, 101);
         }
 

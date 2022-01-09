@@ -30,9 +30,10 @@
                 <!--<Border.Background>
                     <ImageBrush ImageSource="Images/OptionsGridImages/OptionsMenuPlaceholder.png"/>
                 </Border.Background>-->
-                <TextBlock x:Name="TxbEquation" Text="2 + 2 = ?" Width="250" Height="80" FontSize="48" Foreground="White" TextAlignment="Center"/>
+                <TextBlock x:Name="TxbEquation" Text="2 + 2" Width="250" Height="80" FontSize="48" Foreground="White" TextAlignment="Center"/>
             </Border>
-            <Image Grid.Column="0" Height="300" Width="300" VerticalAlignment="Top" Source="Images/OptionsGridImages/OptionsMenuPlaceholder.png" Margin="55,23,54.8,0"/>
+            <Image x:Name="CharacterImage" Grid.Column="0" Height="300" Width="300" VerticalAlignment="Top" Source="Images/OptionsGridImages/OptionsMenuPlaceholder.png" Margin="55,23,54.8,0"/>
+            <Image x:Name="EnemyImage" Grid.Column="2" Height="300" Width="300" VerticalAlignment="Top" Source="Images/OptionsGridImages/OptionsMenuPlaceholder.png" Margin="55,23,54.8,0"/>
         </Grid>
         <!--#endregion-->
 
