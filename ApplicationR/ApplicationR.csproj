@@ -68,9 +68,15 @@
   <ItemGroup>
     <Compile Include="ContainerConfig.cs" />
     <Compile Include="EquationsInt.cs" />
+    <Compile Include="HealthMechanic.cs" />
     <Compile Include="ICalculateAnswer.cs" />
+    <Compile Include="ICheckHealth.cs" />
+    <Compile Include="IEnemyHealth.cs" />
     <Compile Include="IEquate.cs" />
     <Compile Include="IEquationsInt.cs" />
+    <Compile Include="IHealthMechanic.cs" />
+    <Compile Include="IPlayerHealth.cs" />
+    <Compile Include="IPopulateRange20.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

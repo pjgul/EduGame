@@ -17,6 +17,7 @@ namespace ApplicationR
             builder.RegisterType<Arguments>().As<IArguments<int>>();
             builder.RegisterType<Health>().As<IHealth>();
             builder.RegisterType<EquationsInt>().As<IEquationsInt>();
+            builder.RegisterType<HealthMechanic>().As<IHealthMechanic>();
 
             return builder.Build();
         }

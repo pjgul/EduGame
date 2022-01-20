@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GameUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Icon="Images/Icons/MathQuest.ico"
+        Title=""
+        ResizeMode="NoResize"
+        Height="700" Width="600">
     <Grid>
-        
+        <Button Name="BtnContinue" Content="Kontynuuj Grę" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" Width="574" Height="47" Click="BtnContinue_Click"/>
+
     </Grid>
 </Window>

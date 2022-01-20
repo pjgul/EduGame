@@ -24,5 +24,12 @@ namespace GameUI
         {
             InitializeComponent();
         }
+
+        private void BtnContinue_Click(object sender, RoutedEventArgs e)
+        {
+            GameScreen gameScreen = new GameScreen();
+            gameScreen.Show();
+            Close();
+        }
     }
 }

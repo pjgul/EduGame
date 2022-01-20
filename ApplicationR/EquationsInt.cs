@@ -35,6 +35,19 @@ namespace ApplicationR
             _arguments.ArgumentE = new Random().Next(1, 101);
         }
 
+        public void PopulateArguments_Range20()
+        {
+            _arguments.ArgumentA = new Random().Next(1, 21);
+            System.Threading.Thread.Sleep(100);
+            _arguments.ArgumentB = new Random().Next(1, 21);
+            System.Threading.Thread.Sleep(100);
+            _arguments.ArgumentC = new Random().Next(1, 21);
+            System.Threading.Thread.Sleep(100);
+            _arguments.ArgumentD = new Random().Next(1, 21);
+            System.Threading.Thread.Sleep(100);
+            _arguments.ArgumentE = new Random().Next(1, 21);
+        }
+
         public int ArgumentA { get { return _arguments.ArgumentA; } set { _arguments.ArgumentA = value; } }
 
         public int ArgumentB { get { return _arguments.ArgumentB; } set { _arguments.ArgumentB = value; } }
@@ -52,6 +65,10 @@ namespace ApplicationR
             return ArgumentA + ArgumentB;
         }
 
+        /// <summary>
+        /// Tests whether or not the given asnwer is equal to correct calculation.
+        /// </summary>
+        /// <returns></returns>
         public bool EquateAnswers()
         {
             return (ArgumentsAnswer == CalculateAnswer()) ? true : false;

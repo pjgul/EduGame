@@ -148,5 +148,17 @@
   <ItemGroup>
     <Resource Include="Images\GameGridImages\GameGridOverlay.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Misc\null.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Knight\knight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Enemies\slime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Enemies\imps.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

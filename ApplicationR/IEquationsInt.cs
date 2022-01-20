@@ -1,6 +1,6 @@
 ﻿namespace ApplicationR
 {
-    public interface IEquationsInt : IEquate, ICalculateAnswer
+    public interface IEquationsInt : IEquate, ICalculateAnswer, IPopulateRange20
     {
         void PopulateArguments_Range100();
 
