@@ -27,10 +27,9 @@
 
             <!--Eqation-->
             <Border Grid.Column="1" Height="250" Width="250" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <!--<Border.Background>
-                    <ImageBrush ImageSource="Images/OptionsGridImages/OptionsMenuPlaceholder.png"/>
-                </Border.Background>-->
-                <TextBlock x:Name="TxbEquation" Text="" Width="250" Height="80" FontSize="48" Foreground="White" TextAlignment="Center"/>
+                <Border Height="85" Background="Black">
+                <TextBlock x:Name="TxbEquation" Text="" Width="250" Height="80" FontSize="48" Foreground="#FF5D5D5D" Background="#FFF0F0AF" TextAlignment="Center"/>
+                </Border>
             </Border>
             <Image x:Name="CharacterImage" Grid.Column="0" Height="300" Width="300" VerticalAlignment="Top" Source="Images/Knight/knight.png" Margin="55,23,54.8,0"/>
             <Image x:Name="EnemyImage" Grid.Column="2" Height="300" Width="300" VerticalAlignment="Top" Source="Images/Enemies/slime.png" Margin="55,23,54.8,0"/>
@@ -69,7 +68,7 @@
             </Grid.Background>
             <TextBox x:Name="TxbAnswerBox" BorderBrush="Black" Width="80" Height="80" BorderThickness="4" Text="" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center"/>
             <Button x:Name="BtnAttack" Content="Atak!" HorizontalAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Center" Width="80" Click="BtnAttack_Click"/>
-            <Label Name="LblScore" Content="Score: 0" Margin="30,30,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24"></Label>
+            <Label Name="LblScore" Content="Wynik: 0" Margin="30,30,0,0" VerticalAlignment="Top" Foreground="White" FontSize="24"></Label>
         </Grid>
         <!--#endregion-->
     </Grid>

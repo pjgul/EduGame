@@ -310,7 +310,7 @@ namespace GameUI
             {
                 NewEnemy();
                 Score++;
-                LblScore.Content = "Score: " + Score;
+                LblScore.Content = "Wynik: " + Score;
             }
             InitiateProblem();
         }
