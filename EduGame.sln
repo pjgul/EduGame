@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7B6F54A2-9F9E-4D27-A105-78A0D8EF96FB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C9AEB29D-9724-4683-A605-870A9ED9580B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameUI", "GameUI\GameUI.csproj", "{F2257270-7D1F-40B9-AB49-7A79444D6E58}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationR", "ApplicationR\ApplicationR.csproj", "{E73CFDBD-4630-4D70-B293-73FE68953B53}"
